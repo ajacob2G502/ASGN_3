@@ -55,18 +55,7 @@ const AlbumDetailPage = ({ albums, onAddToCart }) => {
               <dt>Speed</dt>
               <dd>{album.specs.speed}</dd>
             </div>
-            <div>
-              <dt>Label</dt>
-              <dd>{album.specs.label}</dd>
-            </div>
           </dl>
-
-          <h3 className="tracklist-heading">Tracklist</h3>
-          <ol className="tracklist">
-            {album.tracklist.map((track) => (
-              <li key={track}>{track}</li>
-            ))}
-          </ol>
 
           <div className={`stock-tag ${soldOut ? "out" : ""}`}>
             {soldOut
